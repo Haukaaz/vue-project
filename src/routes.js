@@ -16,9 +16,6 @@ const router = createRouter({
         { path: 'create', component: CreatePage },
       ]
     },
-
-
-
   ]
 })
 
