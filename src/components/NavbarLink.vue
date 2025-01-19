@@ -3,7 +3,7 @@
     <router-link 
       :to="`/${index}`"
       class="nav-link" 
-      :class="activeClasses" 
+      active-class="active emphasize"
       aria-current="page" 
       :title="`This link goes to the ${page.link.text} page`"
     >{{ page.link.text }}</router-link>
@@ -12,20 +12,6 @@
 
 <script>
 export default {
-  props: ['page', 'index', 'isActive'],
-  computed: {
-    activeClasses() {
-      return {
-        active: this.isActive,
-        emphasize: this.isActive
-      }
-    }
-  }
+  props: ['page', 'index']
 }
 </script>
-
-<style scoped> /* This will scope the CSS styles to this component */
-  .emphasize {
-    text-decoration: underline !important;
-  }
-</style>
