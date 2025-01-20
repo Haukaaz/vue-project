@@ -1,10 +1,10 @@
 <template>
   <nav 
-    :class="[`navbar-${theme}`, `bg-${theme}`, 'navbar', 'navbar-expand-lg']"
+    :class="[`navbar-${theme}`, `bg-${theme}`, 'navbar', 'navbar-expand']"
   >
     <div class="container-fluid">
       <a class="navbar-brand" href="#">My Vue</a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
           <navbar-link
             v-for="(page, index) in publishedPages" class="nav-item" :key="index"
             :page="page"
